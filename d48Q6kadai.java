@@ -1,5 +1,5 @@
 //s23011
-//
+//if文で勝利したチームを出力した 
 
 public class d48Q6kadai {
 	public static void main(String[] args) {
@@ -16,6 +16,13 @@ public class d48Q6kadai {
 		Match match = new Match();
 		match.setAchievements(teamA, teamB);
 		System.out.println(match.showResult());
+
+		if(match.winPoint(teamA.point, teamB.point, teamA.tryNumber) > match.winPoint(teamB.point, teamA.point, teamB.tryNumber)) {
+            System.out.println("チームAの勝利！");
+        } if(match.winPoint(teamA.point, teamB.point, teamA.tryNumber) < match.winPoint(teamB.point, teamA.point, teamB.tryNumber)) {
+            System.out.println("チームBの勝利！");
+		} else
+			System.out.println("引き分け!");
 	}
 }
 
