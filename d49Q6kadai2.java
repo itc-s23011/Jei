@@ -76,7 +76,6 @@ class Analyzer {
 		return new int[]{high, low};
 	}
 	double getMedian() {
-        // 配列をソート（バブルソートを使用）
         for (int i = 0; i < nums.length - 1; i++) {
             for (int j = 0; j < nums.length - 1 - i; j++) {
                 if (nums[j] > nums[j + 1]) {
@@ -87,7 +86,6 @@ class Analyzer {
             }
         }
 
-        // 中央値を計算
         if (nums.length % 2 == 0) {
             return (nums[nums.length / 2 - 1] + nums[nums.length / 2]) / 2.0;
         } else {
