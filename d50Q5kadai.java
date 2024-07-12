@@ -1,3 +1,7 @@
+// s23011
+// for を使ってソート途中の配列を出力するようにした
+
+
 class d50Q5kadai {
     public static void main(String[] args) {
         int[] num = new int[args.length];
