@@ -1,3 +1,8 @@
+/*s23011 
+ * int i, price = 1200; を1300にして、100円値上げ。
+ * int[] rate = {0, 20, 18, 15}; 1円ずつ値上げ。　
+ */
+
 public class d51Q5kadai {
     public static void main(String[] args) {
         double[] level = {0.0, 24.0, 57.0, Double.MAX_VALUE};
