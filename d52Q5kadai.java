@@ -1,3 +1,5 @@
+//s23011
+//5から10に変更
 public class d52Q5kadai {
 	public static void main(String[] args) {
 		String majors = "+----";
